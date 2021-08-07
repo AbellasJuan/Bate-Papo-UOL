@@ -46,20 +46,41 @@ entrarComNome()
     }
   }
 
+  function tratarSucesso(resposta){
+    if(resposta.status === 200){
+    }
+  }
 
+  function buscarDados(){
+      const promise = axios.get(URL_MESSAGES);
+      promise.then(renderizarMensagens);    
+    }
+    
+    setInterval(buscarDados, 3000);
+        
+    function renderizarMensagens(resposta){
+      let corpoDoChat = document.querySelector(".messages");
+      corpoDoChat.innerHTML = " ";
+      for(let i=0; i<resposta.data.length; i++){
+  
+        let time = resposta.data[i].time;
+        let from = resposta.data[i].from;
+        let to = resposta.data[i].to;
+        let text = resposta.data[i].text;
+      
+        const mensagem = `<p><time>(${time})</time> 
+        <strong class="from">&nbsp${from}</strong>&nbsppara&nbsp 
+        <strong class="to">${to}:&nbsp&nbsp</strong>
+        ${text}</p>`
 
+        corpoDoChat.innerHTML += mensagem  
+      }
+      scrollAteFinal();
+    }
+     
 
+  function scrollAteFinal(){
+  const pegarUltima = document.querySelector(".fim-das-mensagens");
+  pegarUltima.scrollIntoView();
+  }
 
-
-
-// dar status online a cada .length.length.length. segundos
-// fazer commit logo
-
-
-// //mudar cores da mensagem
-
-// if innerHTML contains entrar na sala ou saiu da sala classList.buscarDados("fundo-cinza")]
-
-// .fundo-cinza{
-//   background-color:
-// }
