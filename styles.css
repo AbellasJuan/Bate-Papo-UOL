@@ -7,26 +7,22 @@
 
 body{
     width: 100vw;
-    height: 667px;
-
+    height: auto;
     background-color: #f3f3f3;
 }
 
 header{
     width: 100vw;
     height: 80px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     position: fixed;
     top: 0;
-    
+    left: 0;
+    z-index: 999;
     padding: 0 23px 0 19px;
-
     box-shadow: 0px 4px 6px 0px #0000000D;
-
     background-color: white;
 }
 
@@ -42,17 +38,23 @@ header ion-icon{
 
 .messages{
     width: 100vw;
-    min-height: 40px;
-
+    height: auto;
     margin-top: 106px;
+    padding-bottom: 90px;
+    background-color: #f3f3f3;
+}
+
+.messages p{
+    width: 100vw;
+    min-height: 40px;
     margin-bottom: 4px;
     padding: 0 9px 0 8px;
-    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    background-color: white;
 
-    background-color: #dcdcdc;
+    word-break: break-word;
 }
 
 time{
@@ -63,30 +65,23 @@ time{
 
 .from{
     font-weight: 700;
-
 }
 
 .to{
     font-weight: 700;
-    
 }
 
 footer{
     width: 100vw;
     height: 80px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     position: fixed;
     bottom: 0;
-
+    z-index: 999;
     padding-left: 17px;
     padding-right: 17px;
-
-    margin-top: 26px;
-    
     box-shadow: 0px -4px 6px 0px #0000000D;
     background-color: white;
 }
@@ -96,26 +91,18 @@ input{
     font-style: italic;
     font-weight: 400;
     line-height: 21px;
-        
-    width: auto;
+    width: 80%;
     height: 30px;
-
     background: #000000;
-
-    
     background-color: white;
     border: none;
     outline: none;
 }
 
-    /* font-size: 18px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 21px;
+input:focus{
+    font-style:normal;
+}
 
-    width: auto;
-    height: 30px;
-
-    border: none;
-    outline: none;
-} */ 
+footer ion-icon{
+    font-size: 32px;
+}

@@ -17,20 +17,16 @@
     </header>
 
     <main>
-      
-      <div class="messages">
-        <p>  <time>(09:21:45)</time> 
-          <strong class="from">João</strong> para 
-          <strong class="to">Todos: </strong>
-        Bom dia 
-        </p>
-      </div>
+      <div class="messages"></div>
+      <div class="fim-das-mensagens"></div>
     </main>
     
     <footer>
-      <input type="text" placeholder="Escreva aqui..." />
+      <input type="text"  placeholder="Escreva aqui... " />
+      <ion-icon name="paper-plane-outline" onclick="enviarMensagem()"></ion-icon>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="scripts.js"></script>
   </body>
