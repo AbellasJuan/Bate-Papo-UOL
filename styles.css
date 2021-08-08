@@ -42,6 +42,8 @@ header ion-icon{
     margin-top: 100px;
     padding-bottom: 90px;
     background-color: #f3f3f3;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .fim-das-mensagens{
@@ -118,7 +120,7 @@ input:focus{
 }
 
 input:focus::placeholder{
-    color: black
+    color: white;
 }
 
 footer ion-icon{

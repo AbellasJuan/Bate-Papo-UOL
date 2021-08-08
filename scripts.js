@@ -4,9 +4,6 @@ const URL_STATUS = "https://mock-api.bootcamp.respondeai.com.br/api/v3/uol/statu
 
 let nickName;
 
-entrarComNome()
-buscarDados();
-
   function entrarComNome(){
     nickName = prompt('Qual o seu lindo nickname?');
     const data = {
@@ -117,3 +114,13 @@ buscarDados();
   function tratarErroResposta(naoEnviada){
     document.location.reload(true);
   }
+
+  document.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+    
+        var btn = document.querySelector("#submit");
+      
+      btn.click();
+    
+    }
+  });
