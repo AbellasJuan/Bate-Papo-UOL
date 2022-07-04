@@ -2,8 +2,6 @@
 
 This is an online web chat application inspired in our old friend "Bate-papo Uol"!! <br/>
 
-<p align="center"><img width="300px" src="/assets/uol.gif" /></p>
-
 Project developed using vanilla javasript! 
 <br>
 
