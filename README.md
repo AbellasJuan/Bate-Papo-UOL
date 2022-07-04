@@ -1,6 +1,6 @@
 <h1 align="center"> :speaking_head: Bate- papo UOL</h1>
 
-This is an online web chat application inspired in our old friend "Bate-papo Uol"!! <br/>
+This is an online web chat application inspired in our old friend "Bate-papo UOL"!! <br/>
 
 Project developed using vanilla javasript! 
 <br>
